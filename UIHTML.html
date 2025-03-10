@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Car Price Prediction</h1>
+        <form id="predictionForm">
+            <label for="brand">Car Brand:</label>
+            <input type="text" id="brand" required>
+            
+            <label for="model">Car Model:</label>
+            <input type="text" id="model" required>
+            
+            <label for="year">Year:</label>
+            <input type="number" id="year" required>
+            
+            <label for="engine_size">Engine Size:</label>
+            <input type="number" id="engine_size" step="0.1" required>
+            
+            <label for="fuel_type">Fuel Type:</label>
+            <input type="text" id="fuel_type" required>
+            
+            <label for="transmission">Transmission:</label>
+            <input type="text" id="transmission" required>
+            
+            <label for="mileage">Mileage:</label>
+            <input type="number" id="mileage" required>
+            
+            <label for="doors">Doors:</label>
+            <input type="number" id="doors" required>
+            
+            <label for="owner_count">Owner Count:</label>
+            <input type="number" id="owner_count" required>
+            
+            <label for="model_type">Model Type:</label>
+            <select id="model_type">
+                <option value="rf">Random Forest</option>
+                <option value="gbm">Gradient Boosting</option>
+            </select>
+            
+            <button type="submit">Predict Price</button>
+        </form>
+        <h2 id="result"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
